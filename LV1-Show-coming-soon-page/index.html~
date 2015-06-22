@@ -1,0 +1,54 @@
+<head>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <title>Level One Show</title>
+</head>
+<body>
+  <style>
+    @font-face {
+      font-family: bebas-neue;
+      src: url(BebasNeue.otf);
+      font-weight: bold;
+    }
+
+    body {
+      background-color: black;
+      height: 90%;
+    }
+
+    .soon {
+      width: 60vmin;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+
+    .soon_text {
+      font-family: bebas-neue;
+      margin-top: 10px;
+      font-size: 500%;
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .sneak_peek {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+  </style>
+  <a href="https://www.twitter.com/lvl1show">
+    <img class="soon" src="logo.jpg" alt="coming soon!">
+  </a>
+  <p align="center" class="soon_text">Coming soon...</p>
+  <a href="https://github.com/MrFlynn/Level-One-Show-Website">
+    <img class="sneak_peek" src="github.svg" alt="you see me now!">
+  </a>
+</body>
+  </a>
+</body>

@@ -1,0 +1,5 @@
+Todo list:
+- change favicon (talk with Fultone about this).
+
+ideas for favicon:
+- just 'lv1' without all the text hightlighing gone and the text in black
