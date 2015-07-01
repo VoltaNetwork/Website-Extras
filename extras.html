@@ -3,24 +3,43 @@
 
 <!-- Team Page Link -->
 
-<div class="team_goto">
-  <a class="team_link" href="#">Go to the Rest of the Team</a> <!-- Supposed to go to pages/index.html -->
-  <svg height="100" width="75" class="goto">
-  	<image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="arrow487.svg" height="100" width="75"></image>
-  </svg>
-</div>
+<body>
+	<div class="team_goto">
+	  <a class="team_link" href="#">Go to the Rest of the Team</a> <!-- Supposed to go to pages/index.html -->
+	  <svg height="100" width="75" class="goto" onclick="location.href='#'">
+	  	<image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="arrow487.svg" height="100" width="75"></image>
+	  </svg>
+	</div>
+</body>
 
 <style>
+	body {
+		background: url(gradient.png);
+	}
+
 	.goto {
 		vertical-align: middle;
+		filter: invert(100%);
+		-webkit-filter: invert(1);
+		transition-duration: 0.4s;
 	}
 
 	.team_link {
 		font-size: large;
+		text-decoration: none;
+		color: white;
+		transition-duration: 0.4s;
+	}
+
+	.team_goto:hover > svg, .team_goto:hover > a {
+		filter: invert(0%);
+		-webkit-filter: invert(0);
+		color: black;
 	}
 </style>
 
 <!-- Color Inversion for IE 8:
+
 filter:progid:DXImageTransform.Microsoft.BasicImage(invert=1);
 NOTE: I couldn't figure out how to do this SVG image tranform with FeColorMatrix.
 This is the only method that would work for me, but it became deprecated
